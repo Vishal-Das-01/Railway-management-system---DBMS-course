@@ -1,0 +1,168 @@
+<!-- https://csshint.com/css-alert-box/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Railway Reservation System</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;600;700&family=Uchen&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <script src="https:/ /kit.fontawesome.com/d62e272c58.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <section class="header">
+            <nav>
+                <a href="https://railwayreservationsystemvishal.000webhostapp.com/"><img src="images/logo2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="https://railwayreservationsystemvishal.000webhostapp.com/">Home</a></li>
+                        <li><a href="https://railwayreservationsystemvishal.000webhostapp.com/displayTrain.php">Show Trains</a></li>
+                        <li><a href="https://railwayreservationsystemvishal.000webhostapp.com/insert01.php">Book Ticket</a></li>
+                        <li><a href="https://railwayreservationsystemvishal.000webhostapp.com/canelForm.php">Cancel Ticket</a></li>
+                        <li><a href="https://railwayreservationsystemvishal.000webhostapp.com/showTicket.php">View Ticket</a></li>
+                      
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Online railway reservation</h1>
+                <p>SCROLL DOWN TO KNOW ABOUT US.<br>We hope that you have smooth experience on this platform.<br>Before booking LOOK at avaliable trains from see the top menu, and remember the train id.</p>
+                <a href="https://railwayreservationsystemvishal.000webhostapp.com/insert01.php" class="visit-know">Book Now</a>
+            </div>
+        </section>
+
+
+<! STATIONS---->
+        
+        <section class="campus">
+            <h1>Top 3 stations</h1>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, magni.</p> -->
+
+            <div class="row">
+
+                <div class="campus-column">
+                    <img src="images/rohri.jpg" >
+                    <div class="layer">
+                        <h3>ROHRI</h3>
+                    </div>
+                </div>
+
+                <div class="campus-column">
+                    <img src="images/lahore.png" >
+                    <div class="layer">
+                        <h3>LAHORE</h3>
+                    </div>
+                </div>
+
+                <div class="campus-column">
+                    <img src="images/karachi.png" >
+                    <div class="layer">
+                        <h3>KARACHI</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+            <!-- ------Facilities------ -->
+
+            <section class="facilities">
+                <h1>Our Facilities</h1>
+
+                <div class="row">
+                    <div class="facilities-col">
+                        <img src="images/facility001.jpg" alt="">
+                        <h3>World's Best Service</h3>
+                        <p>All the trains has most very comfortable seats. Moreover, the staff members are avaliable in every cabinet for passenger assitance.</p> </div>
+
+                    <div class="facilities-col">
+                        <img src="images/facility02.jpg" alt="">
+                        <h3>Best Internet Speed</h3>
+                        <p>For your best and smooth journey, the trains have built-in internet system. Which means now you can contact, and talk with your relatives without worrying about signal loss.</p>
+                        </div>
+                    <div class="facilities-col">
+                        <img src="images/facility03.jpg" alt="">
+                        <h3>Diverse Food Options</h3>
+                        <p>For the best experience of our passenger, the trains provide a wide variety of food in the menu. The food quality will make you feel like home.</p>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ------Testinomials------ -->
+
+            <section class="testinomails">
+                <h1>What Our Users Says</h1>
+
+                <div class="row">
+                    
+                    <div class="testinomail-col">
+                        <img src="images/user1.jpg" >
+                        <div>
+                            <p>This online reservation system is very user-friendly. I didn't found any difficulty in booking the ticket and even though the cancellation process was smooth.</p>
+                            <h3>Ayesha Jawed</h3>
+                           
+                        </div>
+                    </div>
+
+                    <div class="testinomail-col">
+                        <img src="images/user2.jpg" >
+                        <div>
+                            <p>This is the best booking system I have ever used. I simply had to first see the trains and book the tickets.</p>
+                            <h3>M. Ahmed</h3>
+                                                      
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ----Call to Action---- -->
+
+            <section class="cta">
+                <h1>Book your tickets right now<br>Anywhere from World!</h1>
+                <a href="https://railwayreservationsystemvishal.000webhostapp.com/insert01.php" class="visit-know">Book Now</a>
+            </section>
+
+
+            <!-- ----Footer---- -->
+            <section class="footer">
+                <h4>About Us</h4>
+                <p style=" color: #ff2e1f;">This website allows any user to book the tickets for Pakistani train. For further assistance please call on: 021-381-047-00 </p>
+
+
+                <p style=" color: #ff2e1f;">Made by Vishal Das</p>
+            </section>
+
+        <!-- ------Java Script for toggle menu -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0px"
+            }
+
+            function hideMenu(){
+                navLinks.style.right="-200px"
+            }
+        </script>
+
+</body>
+</html>
